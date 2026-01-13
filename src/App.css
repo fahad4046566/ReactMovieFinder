@@ -429,4 +429,31 @@ body {
   border-radius: 9999px;
   font-size: 0.875rem;
 }
+@media (max-width: 767px) {
+  .movie-content {
+    align-items: center; /* center content vertically inside the hero on small screens */
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+  }
 
+  .movie-layout {
+    margin-top: 0;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .movie-poster {
+    width: 10rem;
+    max-height: 60vh;
+    flex-shrink: 0;
+    align-self: center;
+  }
+
+  .movie-poster-img {
+    width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain; /* avoid cropping the poster */
+    display: block;
+  }
+}
